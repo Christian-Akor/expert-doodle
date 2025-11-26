@@ -1,0 +1,31 @@
+{
+  "name": "code-mood-analyzer",
+  "version": "1.0.0",
+  "description": "A fun CLI tool that analyzes the 'mood' of your code based on various metrics",
+  "main": "src/index.js",
+  "bin": {
+    "code-mood": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "jest",
+    "lint": "eslint src lib __tests__ --ext .js",
+    "analyze": "node src/cli.js samples/"
+  },
+  "keywords": [
+    "code-analysis",
+    "mood",
+    "cli",
+    "developer-tools",
+    "fun"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
